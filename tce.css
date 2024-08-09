@@ -1,0 +1,780 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+/* ----------------------------HEADER---------------------------- */
+.back-head {
+    background-color: #830000;
+    border: 1px solid white;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    justify-content: right;
+}
+
+.header {
+
+    display: flex;
+    color: white;
+    padding: 5px;
+    justify-content: space-between;
+    width: 77%;
+    height: fit-content;
+
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.5;
+    height: fit-content;
+}
+
+.header i {
+    color: #830000;
+}
+
+.header button {
+    padding: 2px;
+}
+
+.header a:hover {
+    border-bottom: 1.5px solid white;
+}
+
+.search {
+    display: none;
+}
+
+.search input {
+    padding: 10px;
+    margin: none;
+    width: 300px;
+    border: none;
+    position: absolute;
+    right: 40px;
+    top: 8px;
+    outline: none;
+}
+
+.search button {
+    padding: 10px;
+    font-weight: 500;
+    position: absolute;
+    right: 40px;
+    top: 8px;
+    background-color: #830000;
+    color: white;
+    border: none;
+}
+
+.search button:hover {
+    background-color: black;
+}
+
+
+/* ---------------------------NAVBAR------------------------- */
+
+.navbar {
+    display: flex;
+    padding: 10px;
+}
+
+.nav {
+    width: 78%;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.navbar i {
+    font-size: x-small;
+}
+
+.navbar img {
+    padding-right: 10px;
+}
+
+.outside {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.outside-a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 26px 12px 26px 1px;
+}
+
+.outside-li:hover {
+    color: darkred;
+}
+
+.outside-li:hover .outside-a {
+    border-bottom: 1.5px solid darkred;
+    color: darkred;
+}
+
+.outside-li:hover .inside {
+    display: block;
+    position: absolute;
+    top: 100px;
+    left: 250px;
+
+}
+
+.inside {
+    list-style: none;
+    box-shadow: 2px 2px 2px rgb(239, 236, 236), -2px -2px 2px rgb(246, 243, 243), -2px 2px 2px rgb(250, 242, 242), 2px -2px 2px rgb(235, 234, 234);
+    padding: 15px;
+    width: 250px;
+    background-color: white;
+    display: none;
+    margin: 0px 20px;
+    z-index: 1;
+}
+
+.inside-a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    width: 230px;
+    height: 100%;
+    padding: 10px;
+    margin-top: 3px;
+}
+
+.inside-li {
+
+    width: 270px;
+}
+
+.inside>h5 {
+    font-size: 14px;
+}
+
+
+.inside-a:hover {
+    color: white;
+    background-color: #830000;
+}
+
+.innside {
+    list-style: none;
+    box-shadow: 2px 2px 2px rgb(239, 236, 236), -2px -2px 2px rgb(246, 243, 243), -2px 2px 2px rgb(250, 242, 242), 2px -2px 2px rgb(235, 234, 234);
+    padding: 15px;
+    width: 250px;
+    background-color: white;
+    display: none;
+}
+
+.inside-li:hover .innside {
+    display: block;
+    position: absolute;
+    top: 140px;
+    left: 280px;
+}
+
+.inside-li:hover .innside a {
+    color: black;
+}
+
+.innside li {
+    padding: 10px;
+    margin-top: 3px;
+}
+
+.innside a {
+    color: black;
+    text-decoration: none;
+}
+
+.innside li:hover {
+    background-color: #830000;
+}
+
+.innside li:hover h5 {
+    color: white;
+}
+
+/* -----------------------------CAROUSEL---------------------------- */
+
+.slider {
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.slider-items,
+.hidden {
+    display: none;
+    width: 100%;
+    height: 500px;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.5s ease-in-out;
+}
+
+.active {
+    display: block;
+}
+
+.slider-btns button {
+    font-size: 20px;
+    background-color: whitesmoke;
+    color: black;
+    border: none;
+    padding: 5px 15px;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+.slider-btns {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    visibility: hidden;
+}
+
+.slider:hover .slider-btns {
+    visibility: visible;
+}
+
+.slider-btns button:hover {
+    color: white;
+    background-color: darkred;
+}
+
+/* -----------------------------ANNOUNCEMENT------------------------------ */
+
+.announcement {
+    display: flex;
+    padding: 10px;
+    background-color: lightgray;
+    height: 60px;
+}
+
+.announce {
+    width: 200px;
+    height: fit-content;
+    background-color: darkred;
+    color: white;
+    text-align: right;
+    padding: 5px 20px;
+    margin-top: 5px;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+    border-left: 7px solid black;
+    margin-top: 10px;
+    padding: 0px;
+}
+
+.carousel {
+    overflow: hidden;
+    position: relative;
+    width: 80%;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.1s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-item a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.carousel-item a:hover {
+    color: #830000;
+}
+
+/* -------------------------WELCOME---------------------------- */
+.container-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    width: 4.6px;
+    height: 18px;
+    background-color: darkred;
+    margin: 9px 10px;
+    margin-left: 0px;
+}
+
+.heading {
+    display: flex;
+}
+
+.heading h3 {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.welcome {
+    padding: 10px;
+    background-color: rgba(236, 230, 230, 0.772);
+    width: 45%;
+    margin: 5px 15px;
+}
+
+.welcome p {
+    font-size: small;
+    line-height: 2;
+    text-align: justify;
+}
+
+.button {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 7px 15px;
+    border-radius: 50px;
+    border: 2px solid darkred;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 1px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.button:hover {
+    background-color: darkred;
+    color: white;
+}
+
+/* -------------------------------NEWS---------------------------- */
+
+.news {
+    width: 20%;
+    padding: 10px;
+}
+
+.calender {
+    display: flex;
+    padding: 10px 0px;
+}
+
+.calenders {
+    margin-bottom: 30px;
+}
+
+.calender a {
+    text-decoration: none;
+    color: darkslategray;
+    font-size: 13px;
+    margin: 10px 0px;
+}
+
+.calender a:hover {
+    color: #830000;
+}
+
+.dates {
+    width: 55px;
+    float: left;
+    border-radius: 3px;
+    border: 1px solid #d4d4d4;
+    margin-right: 20px
+}
+
+.date {
+    text-align: center;
+    background-color: #d4d4d4;
+    padding: 1px;
+    border-bottom: 1px solid #d4d4d4;
+    color: #830000;
+    font-size: 11px;
+}
+
+.dates h1 {
+    font-size: 30px;
+    margin: 10px 0px 0px;
+    color: rgb(1, 1, 78);
+    text-align: center;
+}
+
+.dates p {
+    font-size: 12px;
+    color: darkred;
+    margin: 0px 0px 10px;
+    padding: 0px;
+    text-align: center;
+}
+
+/* ---------------------ADMISSION------------------------ */
+
+.container-2 {
+    display: flex;
+    justify-content: space-between;
+    height: 350px;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.ad-slider {
+    width: 300px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.ad-slider-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.ad-slider-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.ad-slider-item img {
+    width: 100%;
+}
+
+.ad-slider:hover .slider-btns {
+    visibility: visible;
+}
+
+/* -------------------------EVENTS--------------------------- */
+.events {
+    width: 70%;
+    padding: 20px;
+    padding-top: 0px;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.event-btns button {
+    padding: 5px 10px;
+    font-size: 18px;
+    background-color: white;
+    border: none;
+    color: #830000;
+    cursor: pointer;
+}
+
+.event-container {
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.event {
+    min-width: 31%;
+    margin-right: 28px;
+    margin-left: 2px;
+    text-align: center;
+}
+
+.event img {
+    width: 100%;
+    height: 200px;
+}
+
+.event p,
+.event a {
+    padding: 10px;
+    text-align: left;
+}
+
+.event a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.event a:hover {
+    color: #830000;
+}
+
+/* -----------------------STUDY AT TCE------------------------- */
+
+.study {
+    padding: 20px;
+    padding-right: 0px;
+}
+
+.programs {
+    display: flex;
+    justify-content: space-between;
+    width: 99%;
+}
+
+.program {
+    width: 32%;
+    padding: 10px 0px;
+}
+
+.program:where(h3, img, p) {
+    padding: 5px;
+    padding-left: 0px;
+}
+
+.program h3 {
+    color: darkred;
+    font-size: medium;
+
+}
+
+.program img {
+    width: 100%;
+}
+
+.program p {
+    text-align: justify;
+    line-height: 2;
+    font-size: small;
+}
+
+/* --------------------------------EXPLORE TCE---------------------------------- */
+
+.explore {
+    padding: 20px;
+    background-color: rgb(246, 242, 237);
+
+}
+
+.explore-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.explore-content {
+    width: 19%;
+}
+
+.explore-container img {
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.explore-content p {
+    font-size: small;
+    line-height: 2;
+    margin-bottom: 30px;
+}
+
+.explore-content h5 {
+    color: #830000;
+}
+
+/* -----------------------------TCE BY NUMBERS---------------------------------- */
+
+.numbers {
+    background-image: url(tree\ copy.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 20px;
+    margin: 20px 0px;
+}
+
+.infos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.info {
+    padding: 0px 15px;
+    flex-basis: 14%;
+    flex-grow: 1;
+    text-align: center;
+    color: white;
+    width: 8%;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.info i {
+    width: 20px;
+    height: 20px;
+    font-size: 15px;
+    background-color: white;
+    color: darkred;
+    padding: 8px;
+    border-radius: 100%;
+    margin: 5px;
+}
+
+.info p {
+    font-size: 24px;
+    padding: 10px 0px;
+}
+
+.info h6 {
+    font-size: 12px;
+    letter-spacing: .5;
+    line-height: 20px;
+}
+
+.info i:hover {
+    background-color: rgba(255, 255, 255, 0);
+    transition-duration: 0.5s;
+}
+
+/* -------------------------------HIGHLIGHTS-------------------------------- */
+
+.container-3 {
+    display: flex;
+}
+
+.highlights {
+    padding: 0px 20px;
+    margin-bottom: 40px;
+}
+
+.highlight-boxs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.highlight-box {
+    line-height: 1.8;
+    overflow: hidden;
+    font-size: 14px;
+    background: #f4f0ec;
+    text-align: center;
+    border: 1px solid #ddd;
+    width: 250px;
+    height: 240px;
+    margin-right: 24px;
+}
+
+.highlight-box i {
+    font-size: 24px;
+    color: white;
+    background-color: darkred;
+    padding: 12px;
+    border: 4px solid #ccc;
+}
+
+.highlight-box h3 {
+    color: #830000;
+    margin: 5px 0px;
+}
+
+.highlight-box p {
+    margin: 10px 0px;
+}
+
+/* --------------------------------QUICK LINKS---------------------------------- */
+
+.quick-links {
+    padding: 0px 15px;
+}
+
+.quick-link a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    line-height: 2;
+    font-size: 14px;
+}
+
+.quick-link a:hover {
+    color: #830000;
+}
+
+.grivence-container {
+    background-color: #830000;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.grivence {
+    width: 33%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.grivence a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* ------------------------------SOCIAL MEDIA--------------------------------- */
+
+.social-media {
+    background-color: #f4f0eb;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px 20px;
+}
+
+/* ----------------------------------FOOTER------------------------------------ */
+
+.footer {
+    background-color: #830000;
+    padding: 5px 15px;
+}
+
+.clg-name {
+    display: flex;
+    padding: 10px 5px;
+    color: white;
+    justify-content: right;
+    width: 100%;
+}
+
+.footer p {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 0px;
+}
+
+.apps img {
+    padding: 5px 15px;
+}
+
+.fixed>button {
+    padding: 10px 13px;
+    border-radius: 50%;
+    font-size: 18px;
+    background-color: #830000c0;
+    color: rgb(255, 255, 255, 0.8);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    cursor: pointer;
+}

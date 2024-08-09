@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Thiagarajar College of Engineering</title>
+  <link rel="icon" href="tce_logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="tce.css">
+</head>
+
+<body>
+  <div class="back-head">
+    <div class="header">
+      <a href="">GApps@TCE</a>|
+      <a href="">Life@TCE</a>|
+      <a href="">TCE MOOCs</a>|
+      <a href="">TCENet</a>|
+      <a href="">TCECourses</a>|
+      <a href="">Students</a>|
+      <a href="">Alumini</a>|
+      <a href="">ARIIA</a>|
+      <a href="">ERP Login</a>|
+      <a href="">RTI</a>|
+      <a href="">Contact</a>|
+      <p>Search on TCE</p>
+      <button onclick="show()"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+    <div class="search" id="search">
+      <input type="search">
+      <button>SEARCH</button>
+    </div>
+  </div>
+  <div class="navbar" style="display: flex;">
+    <img src="tce_full.JPG" width="250px">
+    <div class="nav">
+      <ul class="outside">
+        <li class="outside-li"><a href="" class="outside-a">About us <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="inside">
+            <li class="inside-li"><a href="" class="inside-a">
+                <h5>About the College</h5>
+              </a></li>
+            <hr style="border: 1px solid rgba(228, 225, 225, 0.932);">
+            <li class="inside-li"><a href="" class="inside-a">
+                <h5>Founder</h5>
+              </a></li>
+            <hr style="border: 1px solid rgba(228, 225, 225, 0.932);">
+            <li class="inside-li"><a href="" class="inside-a">
+                <h5>Management</h5>
+              </a></li>
+            <hr style="border: 1px solid rgba(228, 225, 225, 0.932);">
+            <li class="inside-li"><a href="" class="inside-a">
+                <h5>Administration <i class="fa-solid fa-chevron-down"></i></h5>
+              </a>
+              <ul class="innside">
+                <li><a href="">
+                    <h5>Principal</h5>
+                  </a></li>
+                <hr style="border: 1px solid rgba(228, 225, 225, 0.932);">
+                <li><a href="">
+                    <h5>Resitrar</h5>
+                  </a></li>
+                <hr style="border: 1px solid rgba(228, 225, 225, 0.932);">
+                <li><a href="">
+                    <h5>Dean</h5>
+                  </a></li>
+                <hr style="border: 1px solid rgba(228, 225, 225, 0.932);">
+                <li><a href="">
+                    <h5>Admin Office</h5>
+                  </a></li>
+                <hr style="border: 1px solid rgba(228, 225, 225, 0.932);">
+                <li><a href="">
+                    <h5>Statutory Comittees</h5>
+                  </a></li>
+              </ul>
+            </li>
+            <hr style="border: 1px solid rgba(228, 225, 225, 0.932);">
+            <li class="inside-li"><a href="" class="inside-a">
+                <h5>History & Values</h5>
+              </a></li>
+          </ul>
+        <li class="outside-li"><a href="" class="outside-a">Academics <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="inside" style="left: 350px;">
+            <li class="inside-li"><a href="" class="inside-a">
+                <h5>Study at TCE <i class="fa-solid fa-chevron-down"></i></h5>
+              </a>
+              <ul class="innside" style="top: 20px;">
+                <li><a href="">
+                    <h5>Undergraduate Programmes</h5>
+                  </a></li>
+                <hr style="border: 1px solid rgba(228, 225, 225, 0.932);">
+                <li><a href="">
+                    <h5>Postgraduate Programmes</h5>
+                  </a></li>
+                <hr style="border: 1px solid rgba(228, 225, 225, 0.932);">
+                <li><a href="">
+                    <h5>Research Programmes</h5>
+                  </a></li>
+                <hr style="border: 1px solid rgba(228, 225, 225, 0.932);">
+              </ul>
+            </li>
+            <hr style="border: 1px solid rgba(228, 225, 225, 0.932);">
+            <li class="inside-li"><a href="" class="inside-a">
+                <h5>Departments</h5>
+              </a></li>
+            <hr style="border: 1px solid rgba(228, 225, 225, 0.932);">
+            <li class="inside-li"><a href="" class="inside-a">
+                <h5>Heads of Department</h5>
+              </a></li>
+            <hr style="border: 1px solid rgba(228, 225, 225, 0.932);">
+            <li class="inside-li"><a href="" class="inside-a">
+                <h5>TLP @ TCE</h5>
+              </a></li>
+            <hr style="border: 1px solid rgba(228, 225, 225, 0.932);">
+            <li class="inside-li"><a href="" class="inside-a">
+                <h5>Academic Calendar</h5>
+              </a></li>
+            <hr style="border: 1px solid rgba(228, 225, 225, 0.932);">
+            <li class="inside-li"><a href="" class="inside-a">
+                <h5>Library</h5>
+              </a></li>
+          </ul>
+        </li>
+        <li class="outside-li"><a href="" class="outside-a">Admission <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="inside" style="left: 470px;">
+            <li class="inside-li"><a href="" class="inside-a">
+                <h5>Undergraduate Programs</h5>
+              </a></li>
+            <hr style="border: 1px solid rgba(228, 225, 225, 0.932);">
+            <li class="inside-li"><a href="" class="inside-a">
+                <h5>Postgraduate Programs</h5>
+              </a></li>
+            <hr style="border: 1px solid rgba(228, 225, 225, 0.932);">
+            <li class="inside-li"><a href="" class="inside-a">
+                <h5>Research Programs</h5>
+              </a></li>
+            <hr style="border: 1px solid rgba(228, 225, 225, 0.932);">
+            <li class="inside-li"><a href="" class="inside-a">
+                <h5>Admission 2024-25</h5>
+              </a></li>
+          </ul>
+        </li>
+        <li class="outside-li"><a href="" class="outside-a">Exams</a></li>
+        <li class="outside-li"><a href="" class="outside-a">Research</a></li>
+        <li class="outside-li"><a href="" class="outside-a">Industry</a></li>
+        <li class="outside-li"><a href="" class="outside-a">Placement</a></li>
+        <li class="outside-li"><a href="" class="outside-a">Nodal Centres <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="inside" style="left: 950px;">
+            <li class="inside-li"><a href="" class="inside-a">
+                <h5>TS Srinivasan Centre for Automotive Research</h5>
+              </a></li>
+            <hr style="border: 1px solid rgba(228, 225, 225, 0.932);">
+            <li class="inside-li"><a href="" class="inside-a">
+                <h5>TCE Environmental Information System Centre</h5>
+              </a></li>
+            <hr style="border: 1px solid rgba(228, 225, 225, 0.932);">
+            <li class="inside-li"><a href="" class="inside-a">
+                <h5>TCE Data Center</h5>
+              </a></li>
+            <hr style="border: 1px solid rgba(228, 225, 225, 0.932);">
+            <li class="inside-li"><a href="" class="inside-a">
+                <h5>Thiagarajar Advanced Research Centre (TARC)</h5>
+              </a></li>
+            <hr style="border: 1px solid rgba(228, 225, 225, 0.932);">
+            <li class="inside-li"><a href="" class="inside-a">
+                <h5>Central Computer Centre</h5>
+              </a></li>
+          </ul>
+        </li>
+        <li class="outside-li"><a href="" class="outside-a">NIRF</a></li>
+        <li class="outside-li"><a href="" class="outside-a">NAAC</a></li>
+        <li class="outside-li"><a href="" class="outside-a">IQAC</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="slider">
+    <div class="slider-items active" style="background-image: url('image1.webp');"></div>
+    <div class="slider-items" style="background-image: url('image2.webp');"></div>
+    <div class="slider-items" style="background-image: url('image3.webp');"></div>
+    <div class="slider-items" style="background-image: url('image4.webp');"></div>
+    <div class="slider-items" style="background-image: url('image5.webp');"></div>
+    <div class="slider-btns">
+      <button id="btn-prev"><i class="fa-solid fa-angle-left"></i></button>
+      <button id="btn-next"><i class="fa-solid fa-angle-right"></i></button>
+    </div>
+  </div>
+  <div class="announcement">
+    <p class="announce">Announcement</p>
+    <div class="arrow"></div>
+    <div id="carousel" class="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item">
+          <a href="#">COE Announcement</a>
+        </div>
+        <div class="carousel-item">
+          <a href="#">Admissions 2024-25</a>
+        </div>
+        <div class="carousel-item">
+          <a href="#">In the Governing Council meeting held on 11 September 2023, Mr K Hari Thiagarajan has been
+            appointed as Chairman and Correspondent of Thiagarajar College of Engineering. Congrats Sir!!!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-1">
+    <div class="welcome">
+      <div class="heading">
+        <div class="box"></div>
+        <h3>Welcome to Thiagarajar College of Engineering</h3>
+      </div>
+      <p>Founded in 1957 by philanthropist and industrialist Late Shri.Karumuttu Thiagarajan Chettiar, Thiagarajar
+        College of Engineering (TCE) is a Government Aided Institution and affiliated to Anna University and situated in
+        Madurai, the Temple City .The college is funded by Central and State Governments and Management. The courses
+        offered in TCE are approved by the All India Council for Technical Education (AICTE), New Delhi and Council of
+        Architecture (COA), New Delhi. TCE was granted Autonomy in the year 1987 and the programmes have been accredited
+        by the National Board of Accreditation (NBA). TCE offers 9 Undergraduate programmes, 10 Postgraduate programmes
+        and Doctoral programmes in Engineering, Architecture and Science.</p>
+      <h3 style="padding: 10px 0px;">Our Vision</h3>
+      <p>To provide world class quality technical education with strong ethical values.</p>
+    </div>
+    <div class="news">
+      <div class="heading">
+        <div class="box"></div>
+        <h3>NEWS</h3>
+      </div>
+      <div class="calenders">
+        <div class="calender">
+          <div class="dates">
+            <div class="date">2024</div>
+            <div>
+              <h1>07</h1>
+              <p>JUN</p>
+            </div>
+          </div>
+          <a href="">COE Announcement</a>
+        </div>
+        <div class="calender">
+          <div class="dates">
+            <div class="date">2024</div>
+            <div>
+              <h1>05</h1>
+              <p>MAY</p>
+            </div>
+          </div>
+          <a href="">Admissions 2024-25</a>
+        </div>
+      </div>
+      <button class="button">
+        <h5>VIEW ALL NEWS ></h5>
+      </button>
+    </div>
+    <div class="news">
+      <div class="heading">
+        <div class="box"></div>
+        <h3>NEWS</h3>
+      </div>
+      <div class="calenders">
+        <div class="calender">
+          <div class="dates">
+            <div class="date">2024</div>
+            <div>
+              <h1>07</h1>
+              <p>JUN</p>
+            </div>
+          </div>
+          <a href="">COE Announcement</a>
+        </div>
+        <div class="calender">
+          <div class="dates">
+            <div class="date">2024</div>
+            <div>
+              <h1>05</h1>
+              <p>MAY</p>
+            </div>
+          </div>
+          <a href="">Admissions 2024-25</a>
+        </div>
+      </div>
+      <button class="button">
+        <h5>VIEW ALL NEWS ></h5>
+      </button>
+    </div>
+  </div>
+  <div class="container-2">
+    <div class="admission">
+      <div class="heading">
+        <div class="box"></div>
+        <h3>Admissions</h3>
+      </div>
+      <div class="ad-slider">
+        <div class="ad-slider-inner">
+          <div class="ad-slider-item">
+            <img src="Admission1.jpg" alt="Admission1">
+          </div>
+          <div class="ad-slider-item">
+            <img src="Admission2.jpg" alt="Admission2">
+          </div>
+        </div>
+        <div class="slider-btns">
+          <button id="btn-prev"><i class="fa-solid fa-angle-left"></i></button>
+          <button id="btn-next"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="events">
+      <div class="head">
+        <div class="heading">
+          <div class="box"></div>
+          <h3>Events</h3>
+        </div>
+        <div class="event-btns">
+          <button id="prev"><i class="fa-solid fa-arrow-left"></i></button>
+          <button id="next"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+      <div class="event-container" id="event-container">
+        <div class="event">
+          <img src="event1.png" alt="Event 1">
+          <p style="font-size: x-small;"><i class="fa-solid fa-calendar"></i> 22 Jul, 2024</p>
+          <a href="https://www.tce.edu/events/national-seminar-remote-sensing-technology-agricultural-applications">National
+            Seminar on Remote Sensing Technology for Agricultural Applications</a>
+        </div>
+        <div class="event">
+          <img src="event2.jpeg" alt="Event 2">
+          <p style="font-size: x-small;"><i class="fa-solid fa-calendar"></i> 19 Jul, 2024</p>
+          <a href="https://www.tce.edu/events/alumni-reunion-tce-1999-batch">Alumni Reunion - TCE 1999 Batch</a>
+        </div>
+        <div class="event">
+          <img src="event3.jpeg" alt="Event 3">
+          <p style="font-size: x-small;"><i class="fa-solid fa-calendar"></i> 27 Mar, 2024</p>
+          <a href="https://www.tce.edu/content/national-science-day">National Science Day</a>
+        </div>
+        <div class="event">
+          <img src="event4.jpeg" alt="Event 4">
+          <p style="font-size: x-small;"><i class="fa-solid fa-calendar"></i> 09 Mar, 2024</p>
+          <a href="https://www.tce.edu/events/66th-college-day">66th College Day</a>
+        </div>
+        <div class="event">
+          <img src="event5.png" alt="Event 5">
+          <p style="font-size: x-small;"><i class="fa-solid fa-calendar"></i> 01 Mar, 2024 - 02 Mar, 2024</p>
+          <a href="https://www.tce.edu/events/workshop-ai-image-processing-computer-vision-and-robotics">Workshop on
+            AIfor Image Processing, Computer Vision and Robotics</a>
+        </div>
+        <div class="event">
+          <img src="event6.png" alt="Event 6">
+          <p style="font-size: x-small;"><i class="fa-solid fa-calendar"></i> 18 Dec, 2023 - 23 Dec, 2023</p>
+          <a
+            href="https://www.tce.edu/events/atal-fdp-code-conductor-enhancing-semiconductor-device-models-through-machine-learning">ATAL-FDP
+            on From Code to Conductor: Enhancing Semiconductor Device Models through Machine Learning</a>
+        </div>
+        <div class="event">
+          <img src="event7.jpeg" alt="Event 7">
+          <p style="font-size: x-small;"><i class="fa-solid fa-calendar"></i> 17 Nov, 2023</p>
+          <a href="https://www.tce.edu/events/isro-tce-alumni-felicitation-function">ISRO - TCE Alumni Felicitation
+            Function</a>
+        </div>
+        <div class="event">
+          <img src="event8.png" alt="Event 8">
+          <p style="font-size: x-small;"><i class="fa-solid fa-calendar"></i> 15 Sep, 2023</p>
+          <a href="https://www.tce.edu/events/workshop-advanced-materials-energy-and-environmental-applications">Workshop
+            on Advanced Materials for Energy and Environmental Applications</a>
+        </div>
+        <div class="event">
+          <img src="event9.jpeg" alt="Event 9">
+          <p style="font-size: x-small;"><i class="fa-solid fa-calendar"></i> 17 Jun, 2023</p>
+          <a href="https://www.tce.edu/events/homage-our-beloved-chairman-mr-karumuttu-t-kannan-tce-alumni-association">Homage
+            to our beloved Chairman Mr. Karumuttu T. Kannan by TCE Alumni Association</a>
+        </div>
+        <div class="event">
+          <img src="event10.jpg" alt="Event 10">
+          <p style="font-size: x-small;"><i class="fa-solid fa-calendar"></i> 17 Apr, 2023</p>
+          <a href="https://www.tce.edu/events/ieee-kreta-2023">IEEE KRETA 2023</a>
+        </div>
+        <div class="event">
+          <img src="event11.jpg" alt="Event 11">
+          <p style="font-size: x-small;"><i class="fa-solid fa-calendar"></i> 26 Aug, 2022</p>
+          <a
+            href="https://www.tce.edu/content/tce-research-focus-group-and-acm-india-joinly-organizing-workshop-literature-survey">TCE
+            Research Focus group and ACM India joinly organizing a workshop on Literature survey</a>
+        </div>
+        <div class="event">
+          <img src="event12.jpg" alt="Event 12">
+          <p style="font-size: x-small;"><i class="fa-solid fa-calendar"></i> 30 May, 2022</p>
+          <a href="https://www.tce.edu/content/58th-annual-sports-day">58th Annual Sports Day</a>
+        </div>
+        <div class="event">
+          <img src="event13.jpg" alt="Event 13">
+          <p style="font-size: x-small;"><i class="fa-solid fa-calendar"></i> 31 Jan, 2022</p>
+          <a href="https://www.tce.edu/content/little-engineer-2022-kids-tech-fest">Little Engineer 2022 Kid's
+            TechFest</a>
+        </div>
+        <div class="event">
+          <img src="event14.png" alt="Event 14">
+          <p style="font-size: x-small;"><i class="fa-solid fa-calendar"></i> 24 Jan, 2022</p>
+          <a href="https://www.tce.edu/content/fdtp-wireless-communication">FDTP on Wireless Communication</a>
+        </div>
+      </div>
+      <button class="button">
+        <h5>VIEW ALL EVENTS ></h5>
+      </button>
+    </div>
+  </div>
+  <div class="study">
+    <div class="heading">
+      <div class="box"></div>
+      <h3>Study at TCE</h3>
+    </div>
+    <div class="programs">
+      <div class="program">
+        <h3>UNDERGRADUATE PROGRAMMES</h3>
+        <img src="ug.webp">
+        <p>The institution has fifteen academic departments (offering nine UG programmes and ten PG programmes), five
+          nodal research centers, Incubation center and more than fifty laboratories aiding hands-on learning of
+          products and system building.
+        </p>
+      </div>
+      <div class="program">
+        <h3>POSTGRADUATE PROGRAMMES</h3>
+        <img src="pg.webp">
+        <p>TCE offers Ten Postgraduate Programmes. Each programme comprises of several core, elective courses and
+          project work. A faculty advisor will help the students in the choice of academic options for elective courses.
+        </p>
+      </div>
+      <div class="program">
+        <h3>RESEARCH PROGRAMMES</h3>
+        <img src="research.webp">
+        <p>TCE is internationally renowned for the quality and diversity of its research; various programs are nurtured
+          through academic research and sponsored research funded by National organisations and industry.</p>
+      </div>
+    </div>
+  </div>
+  <div class="explore">
+    <div class="heading">
+      <div class="box"></div>
+      <h3>Explore TCE</h3>
+    </div>
+    <div class="explore-container">
+      <div class="explore-content">
+        <h5>ACADEMIC PROCESS</h5>
+        <img src="explore1.webp">
+        <p>Academic Process at TCE encompasses curriculum development, content…</p>
+        <button class="button">
+          <h5>READ MORE ></h5>
+        </button>
+      </div>
+      <div class="explore-content">
+        <h5>RESEARCH & INNOVATION</h5>
+        <img src="explore2.webp">
+        <p>TCE is focused on Research & Development (R&D) in Engineering,…</p>
+        <button class="button">
+          <h5>READ MORE ></h5>
+        </button>
+      </div>
+      <div class="explore-content">
+        <h5>INDUSTRY & ENTREPRENEURSHIP</h5>
+        <img src="explore3.webp">
+        <p>Industry Institute Interface activities in TCE includes Academic…</p>
+        <button class="button">
+          <h5>READ MORE ></h5>
+        </button>
+      </div>
+      <div class="explore-content">
+        <h5>STUDENT WELFARE</h5>
+        <img src="explore4.webp">
+        <p>Student support system facilitates students to take up co-curricular…</p>
+        <button class="button">
+          <h5>READ MORE ></h5>
+        </button>
+      </div>
+      <div class="explore-content">
+        <h5>FACULTY DEVELOPMENT</h5>
+        <img src="explore5.webp">
+        <p>The Faculty Development initiatives include Quality Faculty recruitment…</p>
+        <button class="button">
+          <h5>READ MORE ></h5>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="numbers">
+    <div class="heading">
+      <div class="box"></div>
+      <h3 style="color: white;">TCE by the Numbers</h3>
+    </div>
+    <div class="infos">
+      <div class="info">
+        <i class="fa-solid fa-building"></i>
+        <p>140+</p>
+        <h6>Acre of Campus</h6>
+      </div>
+      <div class="info">
+        <i class="fa-solid fa-calendar-days"></i>
+        <p>65+</p>
+        <h6>Years of Legacy</h6>
+      </div>
+      <div class="info">
+        <i class="fa-solid fa-building-columns"></i>
+        <p>3</p>
+        <h6>Institutions</h6>
+      </div>
+      <div class="info">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <p>19</p>
+        <h6>Programmes</h6>
+      </div>
+      <div class="info">
+        <i class="fa-solid fa-user-plus"></i>
+        <p>224</p>
+        <h6>Faculty</h6>
+      </div>
+      <div class="info">
+        <i class="fa-solid fa-user-group"></i>
+        <p>116</p>
+        <h6>Faculty with Ph.D</h6>
+      </div>
+      <div class="info">
+        <i class="fa-solid fa-users"></i>
+        <p>4314</p>
+        <h6>Students</h6>
+      </div>
+      <div class="info">
+        <i class="fa-solid fa-person-half-dress"></i>
+        <p>59 : 41</p>
+        <h6>Male : Female Gender ratio</h6>
+      </div>
+      <div class="info">
+        <i class="fa-solid fa-globe"></i>
+        <p>93</p>
+        <h6>Recruiters</h6>
+      </div>
+      <div class="info">
+        <i class="fa-regular fa-credit-card"></i>
+        <p>32</p>
+        <h6>Lakhs per annum Highest Salary</h6>
+      </div>
+      <div class="info">
+        <i class="fa-solid fa-credit-card"></i>
+        <p>4.6</p>
+        <h6>Lakhs per annum Average Salary</h6>
+      </div>
+      <div class="info">
+        <i class="fa-solid fa-file"></i>
+        <p>21</p>
+        <h6>Patents</h6>
+      </div>
+    </div>
+  </div>
+  <div class="container-3">
+    <div class="highlights">
+      <div class="heading">
+        <div class="box"></div>
+        <h3>TCE Highlights</h3>
+      </div>
+      <div class="highlight-boxs">
+        <div class="highlight-box">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <h3>PLACEMENTS</h3>
+          <p>Placement Office facilitating campus recruitment for multinational and national organizations.</p>
+        </div>
+        <div class="highlight-box">
+          <i class="fa-solid fa-book"></i>
+          <h3>LIBRARY</h3>
+          <p>TCE library supports the institute's program of study and research.</p>
+        </div>
+        <div class="highlight-box">
+          <i class="fa-solid fa-hotel"></i>
+          <h3>HOSTEL</h3>
+          <p>Our College facilitate students an excellent Hostel facility to feel home away from home.</p>
+        </div>
+      </div>
+    </div>
+    <div class="quick-links">
+      <div class="heading">
+        <div class="box"></div>
+        <h3>Quick Links</h3>
+      </div>
+      <div class="quick-link">
+        <a href="">Virtual tour of TCE</a>
+        <a href="">Forms - Formats for Download</a>
+        <a href="">Scholarship</a>
+        <a href="">Institute Employees Directory (August 2021)</a>
+        <a href="">Semester Results</a>
+      </div>
+    </div>
+  </div>
+  <div class="grivence-container">
+    <div class="grivence">
+      <a href="">Student Grievance Redressal Cell</a>
+      <a href=""> Forms - Formats for Download</a>
+    </div>
+  </div>
+  <div class="social-media">
+    <div class="apps">
+      <a href="https://www.facebook.com/TheOfficialTCEPage"><img src="facebook.png" width="25"></a>
+      <a href="https://www.linkedin.com/in/tcemadurai"><img src="linkedin.png" width="30"></a>
+      <a href="https://x.com/tceofficialpage"></a><img src="twitter.png" width="30"></a>
+      <a href="https://www.instagram.com/tce_madurai/"></a><img src="insta.png" width="30"></a>
+      <a href="https://www.youtube.com/ThiagarajarCollegeofEngineeringTCE"></a><img src="youtube.png" width="30"></a>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="clg-name">
+      <img src="tce_logo.png" width="50" height="44">
+      <h1>Thiagarajar College of Engineering</h1>
+    </div>
+    <hr style="color: white; border: 1px solid white;">
+    <p>Sitemap | Copyright © 2024 Thiagarajar College of Engineering, Madurai 625 015.</p>
+  </div>
+  <div class="fixed">
+    <button id="scrollToTopBtn"><i class="fa-solid fa-angle-up"></i></button>
+  </div>
+</body>
+
+</html>
